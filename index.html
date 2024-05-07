@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive product list using flexbox</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #4e4e4e;
+            color: white;
+
+        }
+
+        .navbar a {
+            color: white;
+            margin-top: 0px;
+            text-decoration-line: none;
+
+        }
+
+        .navbar li {
+            display: inline;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 20%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            border-radius: 5px;
+            float: left;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card p {
+            text-align: justify;
+            height: 100%;
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .footp {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #4e4e4e;
+            color: white;
+            height: 20px;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        @media screen and (max-width: 800px) {
+
+            .card {
+                flex-direction: column;
+                flex: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .card {
+                flex-direction: column;
+                flex: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul class="navbar">
+            <li><a href="index.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login/Signup</a></li>
+        </ul>
+    </div>
+
+    <div style="height: 300px; width: 1330; margin-top: 0px; background-color:  #f4c3bf;">
+        <h1 style="text-align: center; padding-top: 130px;">Product Categories</h1>
+    </div>
+
+    <div class="row">
+            <div class="card">
+                <img src="images/shoes.jpg" alt="Avatar" style="width:100%; height: 230px;">
+                <div class="container">
+                    <h4><b>Shoes</b></h4>
+                    <p>Discover chic footwear for every occasion. Elevate your style effortlessly with new collection.
+                        Shop now!</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="images/watch.jpg" alt="Avatar" style="width:100% ; height: 230px">
+                <div class="container">
+                    <h4><b>Watches</b></h4>
+                    <p>Elevate your wrist game with timeless elegance. Explore our curated collection of watches at
+                        Shioes. Your style, your time.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/mobile.jpeg" alt="Avatar" style="width:100% ; height: 230px">
+                <div class="container">
+                    <h4><b>Mobile Phones</b></h4>
+                    <p>Unlock the power of connectivity with our latest smartphones. Stay ahead with cutting-edge
+                        technology. Experience more with us.</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="images/sofa.jpg" alt="Avatar" style="width:100% ;height: 230px;">
+                <div class="container">
+                    <h4><b>Sofas</b></h4>
+                    <p>Transform your space with luxurious comfort. Explore our exquisite range of sofas. Elevate your
+                        living experience today!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/handbag.jpg" alt="Avatar" style="width:100% ; height: 230px">
+                <div class="container">
+                    <h4><b>Handbags</b></h4>
+                    <p>Carry elegance everywhere with our stylish handbags. Explore our collection at Shioes and
+                        redefine your accessory game.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/makeup.jpg" alt="Avatar" style="width:100% ; height: 230px">
+                <div class="container">
+                    <h4><b>Makeup</b></h4>
+                    <p>Enhance your beauty with our premium makeup collection. Discover quality products designed to
+                        accentuate your natural radiance.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/perfume.jpg" alt="Avatar" style="width:100% ; height: 230px">
+                <div class="container">
+                    <h4><b>Perfumes</b></h4>
+                    <p>Evoke allure with our captivating perfume range. Discover exquisite scents that define your
+                        essence, available now.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/wardroneorgnizer.jpg" alt="Avatar" style="width:100% ; height: 230px">
+                <div class="container">
+                    <h4><b>Wardrobe Orgnizer</b></h4>
+                    <p>Maximize space and streamline your wardrobe with our organizer solutions. Simplify your life and
+                        elevate your style with us.</p>
+                </div>
+            </div>
+
+        
+
+    </div>
+
+
+
+    <footer>
+        <p class="footp">All Copywrites are reserved 2024.</p>
+    </footer>
+
+</body>
+
+</html>
